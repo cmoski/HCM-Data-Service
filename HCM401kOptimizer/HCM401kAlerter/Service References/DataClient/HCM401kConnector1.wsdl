@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetUserTickerData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserTickerDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserTickerDataResult" type="tns:ArrayOfUserTickerItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfUserTickerItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="UserTickerItem" nillable="true" type="tns:UserTickerItem" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="UserTickerItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DefaultTiker" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetDefaultTicker">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetDefaultTickerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDefaultTickerResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAvailableTickers">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAvailableTickersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAvailableTickersResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetHistoricalDataX">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="tns:HistoryRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="HistoryRequest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Symbol" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="periodicity" type="tns:Periodicity" />
+          <s:element minOccurs="1" maxOccurs="1" name="period" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MaxAmount" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="Periodicity">
+        <s:restriction base="s:string">
+          <s:enumeration value="Day" />
+          <s:enumeration value="Week" />
+          <s:enumeration value="Month" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="GetHistoricalDataXResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHistoricalDataXResult" type="tns:BarInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BarInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Bars" type="tns:ArrayOfBar" />
+          <s:element minOccurs="0" maxOccurs="1" name="Token" type="tns:HistoryRequest" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfBar">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Bar" nillable="true" type="tns:Bar" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Bar">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Open" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="High" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Low" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Close" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Volume" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="TimeStamp" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetUserTickerDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserTickerData" />
+  </wsdl:message>
+  <wsdl:message name="GetUserTickerDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserTickerDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDefaultTickerSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDefaultTicker" />
+  </wsdl:message>
+  <wsdl:message name="GetDefaultTickerSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDefaultTickerResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAvailableTickersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAvailableTickers" />
+  </wsdl:message>
+  <wsdl:message name="GetAvailableTickersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAvailableTickersResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetHistoricalDataXSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHistoricalDataX" />
+  </wsdl:message>
+  <wsdl:message name="GetHistoricalDataXSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHistoricalDataXResponse" />
+  </wsdl:message>
+  <wsdl:portType name="HCM401kConnectorSoap">
+    <wsdl:operation name="GetUserTickerData">
+      <wsdl:input message="tns:GetUserTickerDataSoapIn" />
+      <wsdl:output message="tns:GetUserTickerDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaultTicker">
+      <wsdl:input message="tns:GetDefaultTickerSoapIn" />
+      <wsdl:output message="tns:GetDefaultTickerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailableTickers">
+      <wsdl:input message="tns:GetAvailableTickersSoapIn" />
+      <wsdl:output message="tns:GetAvailableTickersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHistoricalDataX">
+      <wsdl:input message="tns:GetHistoricalDataXSoapIn" />
+      <wsdl:output message="tns:GetHistoricalDataXSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="HCM401kConnectorSoap" type="tns:HCM401kConnectorSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUserTickerData">
+      <soap:operation soapAction="http://tempuri.org/GetUserTickerData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaultTicker">
+      <soap:operation soapAction="http://tempuri.org/GetDefaultTicker" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailableTickers">
+      <soap:operation soapAction="http://tempuri.org/GetAvailableTickers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHistoricalDataX">
+      <soap:operation soapAction="http://tempuri.org/GetHistoricalDataX" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="HCM401kConnectorSoap12" type="tns:HCM401kConnectorSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUserTickerData">
+      <soap12:operation soapAction="http://tempuri.org/GetUserTickerData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaultTicker">
+      <soap12:operation soapAction="http://tempuri.org/GetDefaultTicker" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailableTickers">
+      <soap12:operation soapAction="http://tempuri.org/GetAvailableTickers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHistoricalDataX">
+      <soap12:operation soapAction="http://tempuri.org/GetHistoricalDataX" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HCM401kConnector">
+    <wsdl:port name="HCM401kConnectorSoap" binding="tns:HCM401kConnectorSoap">
+      <soap:address location="http://50.19.251.122/DesktopModules/HCM401kChart/HCM401kConnector.asmx" />
+    </wsdl:port>
+    <wsdl:port name="HCM401kConnectorSoap12" binding="tns:HCM401kConnectorSoap12">
+      <soap12:address location="http://50.19.251.122/DesktopModules/HCM401kChart/HCM401kConnector.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

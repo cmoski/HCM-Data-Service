@@ -1,0 +1,16 @@
+C:\Users\john\Documents\Visual Studio 2010\Projects\Old OTI\CSIData\obj\Debug\CSIData.csproj.ResolveComReference.cache
+C:\Users\john\Documents\Visual Studio 2010\Projects\Old OTI\CSIData\bin\Debug\CSIData.dll
+C:\Users\john\Documents\Visual Studio 2010\Projects\Old OTI\CSIData\bin\Debug\CSIData.pdb
+C:\Users\john\Documents\Visual Studio 2010\Projects\Old OTI\CSIData\obj\Debug\CSIData.dll
+C:\Users\john\Documents\Visual Studio 2010\Projects\Old OTI\CSIData\obj\Debug\CSIData.pdb
+C:\Users\john\Documents\Visual Studio 2010\Projects\Old OTI\CSIData\obj\Debug\CSIData.csprojResolveAssemblyReference.cache
+C:\Users\john\Documents\Visual Studio 2010\Projects\Old OTI\CSIData\obj\Debug\Interop.UA.dll
+C:\Users\john\Documents\Visual Studio 2010\Projects\Old OTI\CSIData\bin\Debug\Interop.UA.dll
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\CSIData\bin\Debug\CSIData.dll
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\CSIData\bin\Debug\CSIData.pdb
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\CSIData\bin\Debug\Interop.UA.dll
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\CSIData\obj\Debug\CSIData.csprojResolveAssemblyReference.cache
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\CSIData\obj\Debug\Interop.UA.dll
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\CSIData\obj\Debug\CSIData.csproj.ResolveComReference.cache
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\CSIData\obj\Debug\CSIData.dll
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\CSIData\obj\Debug\CSIData.pdb

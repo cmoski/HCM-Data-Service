@@ -1,0 +1,87 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SMTPTest.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MailSMTP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">smtp.gmail.com</Value>
+    </Setting>
+    <Setting Name="MailSMTPPort" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">587</Value>
+    </Setting>
+    <Setting Name="MailSMTPSSL" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="MailAccountAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MailPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MailTestAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MailSubject" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Test Subject</Value>
+    </Setting>
+    <Setting Name="CCMail" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MailPattern" Type="System.String" Scope="User">
+      <Value Profile="(Default)">          &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+          &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+          &lt;head&gt;
+          &lt;title&gt;&lt;/title&gt;
+          &lt;style type="text/css"&gt;
+          body
+          {
+          font-family: Arial;
+          font-size: 10pt;
+          padding: 0;
+          margin: 0;
+          color: #000000;
+          }
+          a:link
+          {
+          color: Blue;
+          }
+          a:visited
+          {
+          color: Blue;
+          }
+          a:hover
+          {
+          color: Red;
+          }
+          a:active
+          {
+          color: Red;
+          }
+          &lt;/style&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+          &lt;div&gt;
+          &lt;p&gt;
+          Dear {USER},&lt;/p&gt;
+          &lt;p&gt;
+          You are receiving this email to notify you that there our OTI indicator has detected
+          a change in trend of your stock {TICKER}. Please log in to you account at the HCM
+          401(k) Optimizer® &lt;a href="http://www.hcm401koptimizer.com/OTI.aspx"&gt;www.hcm401koptimizer.com/OTI.aspx&lt;/a&gt;
+          to see it.
+          &lt;/p&gt;
+          &lt;p&gt;
+          Aroon value is {AROON}
+          &lt;/p&gt;
+          &lt;p&gt;
+          Regards,
+          &lt;br /&gt;
+          The HCM 401(k) Optimizer® team
+          &lt;/p&gt;
+          &lt;/div&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;</Value>
+    </Setting>
+    <Setting Name="EmailFrom" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

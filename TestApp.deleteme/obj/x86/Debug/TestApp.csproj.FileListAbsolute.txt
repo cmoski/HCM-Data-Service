@@ -1,0 +1,5 @@
+C:\Users\john\Documents\Visual Studio 2010\Projects\Old OTI\TestApp\bin\Debug\TestApp.exe
+C:\Users\john\Documents\Visual Studio 2010\Projects\Old OTI\TestApp\bin\Debug\TestApp.pdb
+C:\Users\john\Documents\Visual Studio 2010\Projects\Old OTI\TestApp\obj\x86\Debug\TestApp.exe
+C:\Users\john\Documents\Visual Studio 2010\Projects\Old OTI\TestApp\obj\x86\Debug\TestApp.pdb
+C:\Users\john\Documents\Visual Studio 2010\Projects\Old OTI\TestApp\obj\x86\Debug\TestApp.csprojResolveAssemblyReference.cache

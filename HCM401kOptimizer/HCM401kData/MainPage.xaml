@@ -1,0 +1,80 @@
+﻿<UserControl x:Class="HCM401kData.MainPage"
+             xmlns:my="clr-namespace:HCM401kData"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            >
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <my:ctlChart Grid.ColumnSpan="2" Grid.RowSpan="2" x:Name="m_Chart" />
+        <StackPanel Visibility="Collapsed" x:Name="ToolPannel" Orientation="Horizontal" Grid.Column="1" Margin="0 28 5 0" Opacity="0.4" MouseEnter="ToolPannel_MouseEnter" Background="AliceBlue"  MouseLeave="ToolPannel_MouseLeave" VerticalAlignment="Top" HorizontalAlignment="Right">
+            <ComboBox x:Name="cbxAvailableSymbols" Width="60" Margin="2" Visibility="Collapsed" SelectionChanged="cbxAvailableSymbols_SelectionChanged"/>
+            <ComboBox x:Name="cbxPriceStyles" SelectedIndex="0" Margin="2" Width="75" SelectionChanged="cbxPriceStyles_SelectionChanged">
+                <ComboBoxItem Content="Candle" x:Name="psStandard" Tag="standard" />
+                <ComboBoxItem Content="Bar" x:Name="psBar" Tag="bar" />
+                <ComboBoxItem Content="Line" x:Name="psLine" Tag="line" />
+                <ComboBoxItem Content="Kagi" x:Name="psKagi" Tag="kagi"/>
+                <ComboBoxItem Content="Equi Volume" x:Name="psEquiVolume" Tag="equivolume" />
+                <ComboBoxItem Content="Candle Volume" x:Name="psCandleVolume" Tag="candlevolume"/>
+                <ComboBoxItem Content="Equi Volume Shadow" x:Name="psEquiVolumeShadow" Tag="equivolumeshadow"/>
+                <ComboBoxItem Content="Point&amp;Figure" x:Name="pfPointAndFigure" Tag="pointandfigure"/>
+                <ComboBoxItem Content="Renko" x:Name="psRenko" Tag="renko"/>
+                <ComboBoxItem Content="Three Line Break" x:Name="psThreeLineBreak" Tag="threelinebreak"/>
+                <ComboBoxItem Content="Heikin-Ashi" x:Name="psHeikinAshi" Tag="heikinashi"/>
+            </ComboBox>
+            <Button x:Name="btnCrossHair" Width="22" Height="22" Margin="2" ToolTipService.ToolTip="Show/Hide Crosshairs" Click="btnCrossHair_Click">
+                <Image Source="Images/Crosshair.png" Stretch="None"/>
+            </Button>
+            <Button x:Name="btnChangeInfoPanelState" Width="22" Height="22" Margin="2" ToolTipService.ToolTip="Change Info Panel State" Click="btnChangeInfoPanelState_Click">
+                <Image Source="Images/InfoPannelState.png" Stretch="None"/>
+            </Button>
+            <Button x:Name="btnZoomIn" Width="22" Height="22" Margin="2" ToolTipService.ToolTip="Zoom In" Click="btnZoomIn_Click">
+                <Image Source="Images/Plus.png" Stretch="None"/>
+            </Button>
+            <Button x:Name="btnZoomOut" Width="22" Height="22" Margin="2" ToolTipService.ToolTip="Zoom Out" Click="btnZoomOut_Click">
+                <Image Source="Images/Minus.png" Stretch="None"/>
+            </Button>
+            <Button x:Name="btnMoveLeft" Width="22" Height="22" Margin="2" ToolTipService.ToolTip="Move Left" Click="btnMoveLeft_Click">
+                <Image Source="Images/Left.png" Stretch="None"/>
+            </Button>
+            <Button x:Name="btnMoveRight" Width="22" Height="22" Margin="2" ToolTipService.ToolTip="Move Right" Click="btnMoveRight_Click">
+                <Image Source="Images/Right.png" Stretch="None"/>
+            </Button>
+            <Button x:Name="btnResetZoom" Width="22" Height="22" Margin="2" ToolTipService.ToolTip="Reset Zoom" Click="btnResetZoom_Click">
+                <Image Source="Images/ResetZoom.png" Stretch="None"/>
+            </Button>
+            <Button x:Name="btnResetYScales" Width="22" Height="22" Margin="2" ToolTipService.ToolTip="Reset Y scales" Click="btnResetYScales_Click">
+                <Image Source="Images/ResetY.png" Stretch="None"/>
+            </Button>
+            <Button x:Name="btnToggleSideVolumeBars" Width="22" Height="22" Margin="2" ToolTipService.ToolTip="Toggle Side Volume Bars" Click="btnToggleSideVolumeBars_Click">
+                <Image Source="Images/ToggleSideVolumeBars.png" Stretch="None"/>
+            </Button>
+            <Button x:Name="btnToggleDarvasBoxes" Width="22" Height="22" Margin="2" ToolTipService.ToolTip="Toggle Darvas Boxes" Click="btnToggleDarvasBoxes_Click">
+                <Image Source="Images/ToggleDarvasBoxes.png" Stretch="None"/>
+            </Button>
+            <Button x:Name="btnSaveAsImage" Width="22" Height="22" Margin="2" ToolTipService.ToolTip="Save As Image" Click="btnSaveAsImage_Click">
+                <Image Source="Images/Save.png" Stretch="None"/>
+            </Button>
+            <Button x:Name="btnDeleteCurrentObject" Width="22" Height="22" Margin="2" ToolTipService.ToolTip="Remove selected item" Click="btnDeleteCurrentObject_Click">
+                <Image Source="Images/Remove.png" Stretch="None"/>
+            </Button>
+            <ComboBox x:Name="cbxIndicators" Width="150" Margin="2"/>
+            <Button x:Name="btnAddIndicator" Width="22" Height="22" Margin="2" ToolTipService.ToolTip="Add Indicator" Click="btnAddIndicator_Click">
+                <Image Source="Images/ApplyInicator.png" Stretch="None"/>
+            </Button>
+            <ComboBox x:Name="cbxLineStudy" Width="100" Margin="2"/>
+            <Button x:Name="btnAddLineStudy" Width="22" Height="22" Margin="2" ToolTipService.ToolTip="Add line-study" Click="btnAddLineStudy_Click">
+                <Image Source="Images/ApplyL.png" Stretch="None"/>
+            </Button>
+        </StackPanel>
+      
+    </Grid>
+</UserControl>
+
+    
