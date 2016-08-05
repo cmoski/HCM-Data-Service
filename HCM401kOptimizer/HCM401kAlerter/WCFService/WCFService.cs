@@ -56,17 +56,24 @@ namespace HCM401kAlerter
             WCFBarData data = new WCFBarData { ID = id, Symbol = symbol, Data = new List<WCFBar>() };
             if (code == "E5136ED93A4B4687AD12089A5416D21A")//Simple validation - hardcoded password
             {
-                var hyst = frmMain.CSIFeed.GetHistory(new CSIData.HistoryRequest { ID = id, MaxAmount = max, period = 1, Symbol = symbol });
-                foreach (var itm in hyst)
-                    data.Data.Add(new WCFBar
-                    {
-                        Close = itm.Close,
-                        High = itm.High,
-                        Low = itm.Low,
-                        Open = itm.Open,
-                        TimeStamp = itm.TimeStamp,
-                        Volume = itm.Volume
-                    });
+                try
+                {
+                    var hyst = frmMain.CSIFeed.GetHistory(new CSIData.HistoryRequest { ID = id, MaxAmount = max, period = 1, Symbol = symbol });
+                    foreach (var itm in hyst)
+                        data.Data.Add(new WCFBar
+                        {
+                            Close = itm.Close,
+                            High = itm.High,
+                            Low = itm.Low,
+                            Open = itm.Open,
+                            TimeStamp = itm.TimeStamp,
+                            Volume = itm.Volume
+                        });
+                }
+                catch(Exception e)
+                {
+                    LogFile.WriteToLog(string.Format("Message: {0}, \n StackTrace: {1}", e.Message, e.StackTrace));
+                }
             }
             return data;
         }

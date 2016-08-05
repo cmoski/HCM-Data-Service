@@ -75,6 +75,7 @@ namespace CSIData
             {
                 uaApi2 = null;
                 value.Message = e.Message;
+                throw e;
             }
             return ret;
         }

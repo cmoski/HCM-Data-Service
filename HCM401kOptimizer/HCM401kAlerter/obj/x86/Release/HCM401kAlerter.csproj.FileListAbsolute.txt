@@ -1,0 +1,14 @@
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\bin\Release\HCM401kAlerter.exe.config
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\bin\Release\HCM401kAlerter.exe
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\bin\Release\HCM401kAlerter.pdb
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\bin\Release\CSIData.dll
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\bin\Release\Interop.UA.dll
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\bin\Release\CSIData.pdb
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\obj\x86\Release\HCM401kAlerter.csprojResolveAssemblyReference.cache
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\obj\x86\Release\HCM401kAlerter.frmConfiguration.resources
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\obj\x86\Release\HCM401kAlerter.frmMailPattern.resources
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\obj\x86\Release\HCM401kAlerter.frmMain.resources
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\obj\x86\Release\HCM401kAlerter.Properties.Resources.resources
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\obj\x86\Release\HCM401kAlerter.csproj.GenerateResource.Cache
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\obj\x86\Release\HCM401kAlerter.exe
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\obj\x86\Release\HCM401kAlerter.pdb

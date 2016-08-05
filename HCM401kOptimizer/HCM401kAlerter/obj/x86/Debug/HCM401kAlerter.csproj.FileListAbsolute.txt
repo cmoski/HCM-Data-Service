@@ -26,3 +26,17 @@ C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\HCM401kOpti
 C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\obj\x86\Debug\HCM401kAlerter.frmMain.resources
 C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\obj\x86\Debug\HCM401kAlerter.Properties.Resources.resources
 C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\obj\x86\Debug\HCM401kAlerter.csproj.GenerateResource.Cache
+C:\git projects\hcm\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\bin\Debug\HCM401kAlerter.exe.config
+C:\git projects\hcm\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\obj\x86\Debug\HCM401kAlerter.exe
+C:\git projects\hcm\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\obj\x86\Debug\HCM401kAlerter.pdb
+C:\git projects\hcm\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\bin\Debug\HCM401kAlerter.exe
+C:\git projects\hcm\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\bin\Debug\HCM401kAlerter.pdb
+C:\git projects\hcm\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\bin\Debug\CSIData.dll
+C:\git projects\hcm\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\bin\Debug\Interop.UA.dll
+C:\git projects\hcm\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\bin\Debug\CSIData.pdb
+C:\git projects\hcm\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\obj\x86\Debug\HCM401kAlerter.csprojResolveAssemblyReference.cache
+C:\git projects\hcm\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\obj\x86\Debug\HCM401kAlerter.frmConfiguration.resources
+C:\git projects\hcm\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\obj\x86\Debug\HCM401kAlerter.frmMailPattern.resources
+C:\git projects\hcm\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\obj\x86\Debug\HCM401kAlerter.frmMain.resources
+C:\git projects\hcm\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\obj\x86\Debug\HCM401kAlerter.Properties.Resources.resources
+C:\git projects\hcm\HCM Data Service\HCM401kOptimizer\HCM401kAlerter\obj\x86\Debug\HCM401kAlerter.csproj.GenerateResource.Cache

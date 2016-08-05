@@ -1,0 +1,8 @@
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\CSIData\bin\Release\CSIData.dll
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\CSIData\bin\Release\CSIData.pdb
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\CSIData\bin\Release\Interop.UA.dll
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\CSIData\obj\Release\CSIData.csprojResolveAssemblyReference.cache
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\CSIData\obj\Release\Interop.UA.dll
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\CSIData\obj\Release\CSIData.csproj.ResolveComReference.cache
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\CSIData\obj\Release\CSIData.dll
+C:\Users\john\Documents\Visual Studio 2012\Projects\HCM Data Service\CSIData\obj\Release\CSIData.pdb
